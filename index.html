@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html video</title>
+</head>
+<body>
+    <h1  id="heading">Html5 video</h1>
+    <video id="vid1" width="390"control autoplay muted>
+        <source src="02.mp4" type="video/mp4">
+    </video> 
+    <br>
+    <button id="playbutton" onclick="playMe()">PLAY</button>
+    <button id="pausebutton"onclick="pauseMe()">Pause</button>
+
+    <script>
+    var vidRef = document.getElementById("vid1");
+    playMe=function(){
+        vidRef.play()
+    }
+    pauseMe=function(){
+        vidRef.pause()
+    }
+    
+    </script>
+</body>
+</html>
